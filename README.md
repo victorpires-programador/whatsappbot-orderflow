@@ -1,6 +1,6 @@
-# 🤖 ZapOrder – Bot de Pedidos via WhatsApp com PIX
+# 🤖 OrderFlow – Bot de Pedidos via WhatsApp com PIX
 
-O **ZapOrder** é um bot automatizado que permite realizar pedidos de refeições e bebidas diretamente pelo WhatsApp, com pagamentos via PIX. Ele foi desenvolvido usando as bibliotecas **Baileys** e **Axios** em Node.js.
+O **OrderFlow** é um bot automatizado que permite realizar pedidos de refeições e bebidas diretamente pelo WhatsApp, com pagamentos via PIX. Ele foi desenvolvido usando as bibliotecas **Baileys** e **Axios** em Node.js.
 
 ## 🚀 Funcionalidades
 - 📋 Cadastro automático de usuários (nome, endereço e telefone)
