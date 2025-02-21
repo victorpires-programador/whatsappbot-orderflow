@@ -1,0 +1,19 @@
+{
+  "name": "whatsappbot-venda-restaurante",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.13",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "pdf-parse": "^1.1.1",
+    "tesseract.js": "^6.0.0"
+  }
+}
