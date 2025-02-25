@@ -1,0 +1,39 @@
+-- dbOrderFlow - Banco de dados (Script)
+
+-- Criação do banco de dados
+CREATE DATABASE dbOrderFlow
+
+-- Seleciona o banco de dados
+USE dbOrderFlow;
+
+
+-- Criação da tabela de clientes
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    cpf VARCHAR(14) UNIQUE NOT NULL
+);
+
+-- Criação da tabela de produtos
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL
+);
+
+-- Criação da tabela de pedidos
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    id_cliente INT REFERENCES clientes(id),
+    total DECIMAL(10, 2) NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'pendente',
+    transacao_id VARCHAR(50) UNIQUE,  -- ID da transação ou número de controle do comprovante
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Exemplo de inserção de produtos
+INSERT INTO produtos (nome, preco) VALUES
+('Refeição', 25.00),
+('Bebida', 5.00);
