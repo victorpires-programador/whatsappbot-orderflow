@@ -9,18 +9,19 @@ O **OrderFlow** é um bot automatizado que permite realizar pedidos de refeiçõ
 - 💳 Geração de QR Code para pagamentos via PIX
 - ✅ Reconhecimento de comprovantes em PDF
 - ❌ Cancelamento de pedidos pendentes
-- 📄 Listagem de pedidos em andamento
+- 📄 Listagem de pedidos em andamento 
 
 ## 🛠 Tecnologias Utilizadas
 - **Node.js**
 - **Baileys** (API do WhatsApp)
 - **Axios** (Requisições HTTP)
 - **PDF-Parse** (Leitura de PDFs para confirmação de pagamentos)
+- **Tesseract** (OCR para leituras de imagens e identifação de caracteres)
 - **File System (fs)** (Leitura e gravação de arquivos)
 
 ## 📦 Instalação
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/zaporder.git
+   git clone https://github.com/victorpires-programador/orderflow.git
    cd zaporder
