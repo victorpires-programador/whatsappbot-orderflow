@@ -23,5 +23,5 @@ O **OrderFlow** é um bot automatizado que permite realizar pedidos de refeiçõ
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/victorpires-programador/orderflow.git
+   git clone https://github.com/victorpires-programador/whatsapp-orderflow.git
    cd zaporder
